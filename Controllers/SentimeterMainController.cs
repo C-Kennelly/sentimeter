@@ -13,6 +13,7 @@ public class SentimeterMainController : ControllerBase
         {
             normalizedSentimentScore = Random.Shared.Next(0,100),
             normalizedTrendMagnitude = Random.Shared.Next(0,10),
+            emergencySirenThresholdExceeded = Random.Shared.NextDouble() > 0.8
         })
         .ToArray();
 
