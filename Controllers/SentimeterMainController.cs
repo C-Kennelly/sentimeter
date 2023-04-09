@@ -12,8 +12,7 @@ public class SentimeterMainController : ControllerBase
         return Enumerable.Range(1, 5).Select(index => new SentimeterResult
         {
             normalizedSentimentScore = Random.Shared.Next(0,100),
-            normalizedTrendMagnitude = Random.Shared.Next(0,10),
-            emergencySirenThresholdExceeded = Random.Shared.NextDouble() > 0.8
+            normalizedTrendMagnitude = Random.Shared.Next(0,10)
         })
         .ToArray();
 
